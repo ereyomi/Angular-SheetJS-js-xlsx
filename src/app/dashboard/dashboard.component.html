@@ -1,0 +1,20 @@
+<div>
+  <div>
+    <app-file-input (dataEmitter)="loadDataForDisplay($event)"></app-file-input>
+  </div>
+
+  <div class="my-3">
+    <ng-container *ngFor="let tab of fileData?.tabs">
+      <button
+        (click)="loadSelectedSheet(tab)"
+        class="btn btn-light custom-button"
+      >
+        {{ tab }}
+      </button>
+    </ng-container>
+  </div>
+
+  <div *ngIf="fileData?.data">
+    <app-display-data [data]="dataForDisplay"></app-display-data>
+  </div>
+</div>
