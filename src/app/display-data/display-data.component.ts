@@ -9,8 +9,6 @@ export class DisplayDataComponent implements OnInit {
   @Input() data!: Array<any[]>;
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.data);
-  }
+  ngOnInit(): void {}
 
 }

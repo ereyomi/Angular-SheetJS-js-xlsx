@@ -9,8 +9,6 @@ import { DataEmitInterface } from './model/data-emit-interface';
 })
 export class FileInputComponent implements OnInit {
   @Output() dataEmitter: EventEmitter<DataEmitInterface> = new EventEmitter<DataEmitInterface>();
-  tabHeader!: Array<string>;
-  displayData!: any;
   constructor() { }
 
   ngOnInit(): void {
@@ -37,8 +35,6 @@ export class FileInputComponent implements OnInit {
           [`${ wsname }`]: sheetData,
         };
       }
-      /* grab first sheet for display*/
-      this.displayData = temp[tabs[0]];
       /* save data */
       this.dataEmitter.emit({
         tabs,

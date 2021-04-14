@@ -19,6 +19,7 @@ export class DashboardComponent implements OnInit {
     const { tabs, data } = fileD;
     // update data for display
     this.displayData = data[tabs[0]];
+    // push data to temp file data
     this.fileData = fileD;
   }
   get dataForDisplay() {
