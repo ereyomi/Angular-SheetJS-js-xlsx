@@ -5,7 +5,7 @@
 2. Clone project
 
 ```bash
-    > git clone https://github.com/ereyomi/library
+    > git clone https://github.com/ereyomi/Angular-SheetJS-js-xlsx.git
 ```
 
 3. cd into directory and run the command beow to Install Dependencies
