@@ -2,7 +2,7 @@
   <div class="table-responsive-sm">
     <table class="table table-striped" *ngIf="data">
       <ng-container *ngFor="let val of data; let i = index">
-        <ng-container *ngIf="i === 1; else body">
+        <ng-container *ngIf="i === 0; else body">
           <thead class="thead-dark">
             <tr>
               <th scope="col">#</th>
